@@ -24,10 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>PHP Toastr with Bootstrap</title>
 
-    <!-- ✅ Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- ✅ Toastr CSS -->
+    <!-- Toastr CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
@@ -63,13 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 
-    <!-- ✅ JS Libraries -->
+    <!-- JS Libraries -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script>
-        // ✅ Toastr basic setup
+        // Toastr basic setup
         toastr.options = {
             "closeButton": true,
             "progressBar": true,
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             "timeOut": "3000"
         };
         <?php
-        // ✅ If there’s a toastr message in session, show it
+        // If there’s a toastr message in session, show it
         if (isset($_SESSION['toastr_message'])) {
             $msg = $_SESSION['toastr_message'];
             $title = $_SESSION['toastr_title'];
